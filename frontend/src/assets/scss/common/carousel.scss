@@ -1,0 +1,11 @@
+.carousel-item {
+	transition: all 2s;
+}
+.auth-slider {
+	.carousel-indicators li {
+		background-color: $green;
+	}
+	.carousel-indicators {
+		bottom: -50px !important;
+	}
+}

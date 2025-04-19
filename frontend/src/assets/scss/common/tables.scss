@@ -1,0 +1,141 @@
+@use '@angular/material' as mat;
+
+.table-responsive {
+	border: 1px solid $primary-100 !important;
+	border-radius: 16px;
+	table {
+		th,
+		td {
+			padding-left: 30px !important;
+		}
+		thead {
+			background-color: $white !important;
+			tr > th {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				color: $custom-black;
+				padding-top: 22px !important;
+				padding-bottom: 22px !important;
+			}
+		}
+		tbody {
+			border-top: none !important;
+			td {
+				border: none;
+				border-top: 1px solid $primary-100;
+				// padding: 10px !important;
+				white-space: nowrap;
+				vertical-align: middle;
+				font-size: small;
+				color: $custom-primary-dark !important;
+			}
+			tr > th {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				color: $custom-black;
+				padding-top: 22px !important;
+				padding-bottom: 22px !important;
+			}
+		}
+		background-color: $white !important;
+		// border: 1px solid $primary-100 !important;
+		overflow: hidden;
+		border-radius: 16px;
+		margin-bottom: 0px !important;
+	}
+
+	th[sortable] {
+		cursor: pointer;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+}
+
+.table-plan-feature {
+	border: 1px solid $grey !important;
+	tbody {
+		td {
+			border-left: 1px solid $grey !important;
+			border-right: none !important;
+			border-bottom: none !important;
+			padding: 2px;
+			.form-control {
+				font-size: small;
+				padding: 0.275rem 0.5rem;
+				line-height: 1;
+			}
+		}
+		td:first-child {
+			border-left: none !important;
+		}
+	}
+}
+.table > :not(caption) > * > * {
+	background-color: transparent;
+}
+th.desc {
+	content: '';
+	display: block;
+	background-image: url('../../icons/arrow-up.svg');
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: 1px center;
+}
+
+th.asc {
+	content: '';
+	display: block;
+	background-image: url('../../icons/arrow-down.svg');
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: 1px center;
+}
+
+// pagination
+ngb-pagination {
+	width: 100%;
+}
+
+.previous-next-items,
+ngb-pagination .pagination {
+	justify-content: center;
+}
+
+ngb-pagination .page-item.disabled .page-link {
+	color: $custom-primary !important;
+	border: none;
+}
+
+ngb-paginnation .page-link .page-link {
+	border-radius: 50% !important;
+	border: none;
+}
+
+ngb-pagination .page-item {
+	padding: 0px 10px;
+	top: -2px;
+	position: relative;
+	box-shadow: none !important;
+	font-weight: 600;
+}
+
+ngb-pagination .page-item.active .page-link {
+	color: $primary !important;
+	background-color: $white;
+	border: none;
+	border-radius: 50%;
+}
+
+ngb-pagination ul > li:not(.active) > a {
+	background-color: transparent !important;
+	color: $primary !important;
+	border-radius: 50% !important;
+	border: none;
+	box-shadow: none !important;
+}
+
+ngb-pagination ul > li > a {
+	box-shadow: none !important;
+}

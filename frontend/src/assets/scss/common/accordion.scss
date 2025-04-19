@@ -1,0 +1,73 @@
+.faq-accordion .accordion-item {
+	padding: 0.6em !important;
+	width: 100%;
+	border: none;
+	border-top: 1px solid #{$custom-primary-dark}+ 22 !important;
+	border-width: 1px !important;
+	.accordion-body {
+		padding: 0rem 1.25rem;
+	}
+}
+.faq-accordion .accordion-item:first-child {
+	border-top: none !important;
+}
+.faq-accordion .accordion-item:last-child {
+	border-bottom: 1px solid #{$custom-primary-dark}+ 22 !important;
+	border-width: 1px !important;
+}
+
+.faq-accordion .accordion-header {
+	padding: 0.6rem 1.25rem 0rem;
+}
+
+.hr-details-accordion .accordion-item {
+	padding: 0.6em !important;
+	width: 100%;
+	border: none;
+	.accordion-body {
+		padding: 0rem 1.25rem;
+	}
+}
+
+.hr-details-accordion .accordion-header {
+	padding: 0.6rem 1.25rem 0rem;
+	background-color: $white-100;
+}
+
+@media (max-width: 767px) {
+	.faq-accordion .accordion-item {
+		padding: 0.6em !important;
+		width: 100%;
+		.accordion-body {
+			padding: 0rem 1.25rem;
+		}
+	}
+	.business-accordion .accordion-item {
+		padding: 0.6em !important;
+		width: 100%;
+		.accordion-body {
+			padding: 0rem 1.25rem;
+		}
+	}
+}
+
+.business-accordion .accordion-item {
+	padding: 1em !important;
+	border: none;
+	border: 1px solid $primary-100 !important;
+	box-shadow: 1px 3px 9px #cbd3dc;
+	border-radius: 12px;
+	border-width: 1px !important;
+	margin: 0em 0em 2em 0em;
+	.accordion-body {
+		padding: 1rem 0.25rem;
+	}
+}
+.business-accordion .accordion-item:last-child {
+	border-bottom: 1px solid $primary-100 !important;
+	border-width: 1px !important;
+}
+
+.plan-accordion .accordion-item {
+	border: none !important;
+}

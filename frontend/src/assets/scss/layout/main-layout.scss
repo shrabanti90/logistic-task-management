@@ -1,0 +1,18 @@
+mat-sidenav-container {
+	height: 100%;
+	width: 100%;
+	min-height: calc(100vh - 55px);
+	background-color: $white !important;
+}
+.main-content {
+	background-color: $primary-200 !important;
+	padding: 0rem;
+	// min-height: 100% !important;
+	&.sidenav-collapsed {
+		margin-left: 66px !important;
+	}
+}
+
+.page-padding {
+	padding: 1rem 2rem;
+}

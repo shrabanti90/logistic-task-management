@@ -1,0 +1,128 @@
+.card {
+	border-radius: 12px;
+}
+.card-sites {
+	border: 1px solid $primary-100 !important;
+	border-width: 1px !important;
+	border-radius: 12px;
+}
+
+.upload-box {
+	border: 2px dashed $primary-100;
+	border-radius: 10px;
+}
+
+.plan-card {
+	.check-yellow {
+		background-color: #dee83933 !important;
+		border-color: #dee83933 !important;
+		color: #dee839;
+		border-radius: 50%;
+		padding: 4px;
+		font-size: smaller;
+	}
+
+	.check-blue {
+		background-color: #e8f0f9 !important;
+		border-color: #e8f0f9 !important;
+		color: #306eb3;
+		border-radius: 50%;
+		padding: 4px;
+		font-size: smaller;
+	}
+
+	.check-green {
+		background-color: #19c05233 !important;
+		border-color: #19c05233 !important;
+		color: #19c052;
+		border-radius: 50%;
+		padding: 4px;
+		font-size: smaller;
+	}
+	.btn-plan {
+		padding: 6px;
+		font-size: large;
+		border-radius: 6px;
+	}
+	.bg-yellow-total-amount {
+		background-color: #dee839 !important;
+		color: white;
+	}
+	.bg-yellow-cost-verification {
+		background-color: #b4bc34 !important;
+		color: white;
+	}
+	.bg-yellow-num-verification {
+		background-color: #7f8429 !important;
+		color: white;
+	}
+	.bg-yellow-total-credits {
+		background-color: #4e511b !important;
+		color: white;
+	}
+	.bg-blue-total-amount {
+		background-color: #4495f0 !important;
+		color: white;
+	}
+	.bg-blue-cost-verification {
+		background-color: #3e7cc1 !important;
+		color: white;
+	}
+	.bg-blue-num-verification {
+		background-color: #365e8c !important;
+		color: white;
+	}
+	.bg-blue-total-credits {
+		background-color: #1c3c60 !important;
+		color: white;
+	}
+	.bg-green-total-amount {
+		background-color: #1df065 !important;
+		color: white;
+	}
+	.bg-green-cost-verification {
+		background-color: #19c052 !important;
+		color: white;
+	}
+	.bg-green-num-verification {
+		background-color: #1c803e !important;
+		color: white;
+	}
+	.bg-green-total-credits {
+		background-color: #065420 !important;
+		color: white;
+	}
+	.view-yellow {
+		color: #b4bc34;
+	}
+	.view-blue {
+		color: #365e8c;
+	}
+	.view-green {
+		color: #19c052;
+	}
+
+	.plan-card-top-border {
+		border-top-width: 4px !important;
+	}
+	.border-yellow {
+		border-top-color: #b4bc34 !important;
+	}
+	.border-blue {
+		border-top-color: #365e8c !important;
+	}
+	.border-green {
+		border-top-color: #19c052 !important;
+	}
+
+	.plan-banner {
+		position: absolute;
+		top: -6px;
+		left: -4px;
+	}
+	.plan-features {
+		p {
+			font-size: medium;
+		}
+	}
+}

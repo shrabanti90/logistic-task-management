@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+@import './assets/scss/variables.scss';
+@import './assets/scss/theme.scss';
+@import './assets/scss/index.scss';
+@import '~@ng-select/ng-select/themes/default.theme.css';
+
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	background-color: $white !important;
+}
+
+.mat-typography {
+	font: 400 14px / 20px 'Roboto' !important;
+}
+
+.cdk-overlay-container {
+	position: fixed;
+	z-index: 9999;
+}
+// map
+.pac-container {
+	z-index: 2000 !important;
+}

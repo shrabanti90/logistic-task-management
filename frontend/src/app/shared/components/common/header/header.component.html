@@ -1,0 +1,30 @@
+<mat-toolbar class="navbar">
+	<mat-toolbar-row class="justify-content-between">
+		<button mat-icon-button (click)="toggleSideBar()">
+			<mat-icon>menu</mat-icon>
+		</button>
+		<div class="d-flex flex-row align-items-center">
+			<div class="ms-3 d-flex flex-column">
+				<div ngbDropdown class="d-flex align-items-center">
+					<div class="">
+						<img
+							[src]="currentUser?.profilePicture || 'assets/icons/avatar.svg'"
+							class="rounded-circle"
+							width="35"
+							height="35"
+						/>
+					</div>
+					<div>
+						<button mat-button [matMenuTriggerFor]="beforeMenu" class="text-left avatar-name">
+							<div>{{ currentUser?.name | truncate: 12 }}</div>
+							<label class="form-label text-gray">{{ organizationName }}</label>
+						</button>
+					</div>
+					<mat-menu #beforeMenu="matMenu" xPosition="before">
+						<button mat-menu-item (click)="logout()">Logout</button>
+					</mat-menu>
+				</div>
+			</div>
+		</div>
+	</mat-toolbar-row>
+</mat-toolbar>

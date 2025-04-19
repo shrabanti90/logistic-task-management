@@ -1,0 +1,30 @@
+@use '@angular/material' as mat;
+
+.bg-primary {
+	background: $primary !important;
+}
+
+.bg-primary-100 {
+	background: $primary-100 !important;
+}
+
+.bg-primary-200 {
+	background: $primary-200 !important;
+}
+
+.bg-danger {
+	background: $custom-warn !important;
+}
+.bg-green {
+	background: $green !important;
+}
+.bg-white {
+	background: $white !important;
+}
+.bg-white-100 {
+	background: $white-100;
+}
+
+.bg-primary-bluish {
+	background: $primary-bluish !important;
+}

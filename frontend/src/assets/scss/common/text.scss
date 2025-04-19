@@ -1,0 +1,86 @@
+@use '@angular/material' as mat;
+
+.text-custom-primary {
+	background: -webkit-linear-gradient(90deg, #1d6cb5 0.1%, #2ab24b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-primary {
+	color: $primary !important;
+}
+
+.text-primary-100 {
+	color: $primary-100 !important;
+}
+
+.text-primary-200 {
+	color: $primary-200 !important;
+}
+
+.text-primary-300 {
+	color: $primary-300 !important;
+}
+.text-primary-dark {
+	color: $primary-dark;
+}
+.text-custom-primary-dark {
+	color: $custom-primary-dark !important;
+}
+.text-white {
+	color: $white !important;
+}
+
+.text-black {
+	color: $black !important;
+}
+.text-custom-black {
+	color: $custom-black !important;
+}
+.text-custom-black-80 {
+	color: $custom-black-80 !important;
+}
+.text-custom-black-50 {
+	color: $custom-black-50 !important;
+}
+.text-custom-black-20 {
+	color: $custom-black-20 !important;
+	-webkit-text-fill-color: $custom-black-20;
+	background: transparent;
+}
+
+.text-primary-bluish {
+	color: $primary-bluish !important;
+}
+
+.text-danger {
+	color: $custom-warn !important;
+}
+.text-success {
+	color: $green !important;
+}
+
+.text-grey {
+	color: $grey !important;
+}
+.text-small {
+	font-size: small !important;
+}
+.text-smaller {
+	font-size: smaller !important;
+}
+.text-medium {
+	font-size: medium !important;
+}
+
+.opacity-90 {
+	opacity: 0.9;
+}
+
+.fw-bold {
+	font-weight: 500 !important;
+}
+
+.text-transform-none {
+	text-transform: none !important;
+}

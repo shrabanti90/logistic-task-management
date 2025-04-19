@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+/* ======== Angular material custom themes ======== */
+$app-primary: mat.define-palette($custom-brand-primary);
+$app-accent: mat.define-palette($custom-brand-accent);
+$app-warn: mat.define-palette($custom-brand-warn);
+
+$light-theme: mat.define-light-theme(
+	(
+		color: (
+			primary: $app-primary,
+			accent: $app-accent,
+			warn: $app-warn,
+		),
+	)
+);
+
+/* Include all component styles */
+@include mat.all-component-typographies();
+@include mat.core(); // Modern core styles
+
+/* Apply the theme to all components */
+@include mat.all-component-themes($light-theme);

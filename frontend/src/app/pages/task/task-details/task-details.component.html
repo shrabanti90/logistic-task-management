@@ -1,0 +1,86 @@
+<div class="my-3">
+	<div class="modal-header align-items-center">
+		<h2 class="modal-title text-custom-black mb-0 text-align-left" id="modal-basic-title">
+
+			<span *ngIf="!modelData">Add Task</span>
+			<span *ngIf="modelData">Update Task</span>
+		</h2>
+		<button type="button" class="btn-close" aria-label="Close" (click)="dismissModal()"></button>
+	</div>
+	<div class="modal-body">
+		<form [formGroup]="dataForm">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+					<div class="form-group">
+						<label class="form-label text-primary">Task Name*</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter" formControlName="name" />
+						<div class="text-left" *ngFor="let error of errorMessages.name">
+							<ng-container
+								*ngIf="
+									form['name'].hasError(error.type) && (form['name'].dirty || form['name'].touched)
+								"
+							>
+								<span class="text-danger">{{ error.message }}</span>
+							</ng-container>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+					<div class="form-group">
+						<label class="form-label text-primary">Enter Task Status*</label>
+						<select
+							class="form-select text-capitalize"
+							aria-label="Select status"
+							formControlName="taskStatus"
+							aria-placeholder="Select task status"
+						>
+							<option [value]="item.value" *ngFor="let item of taskStatus">
+								<span>{{ item.label }}</span>
+							</option>
+						</select>
+
+						<div class="text-left" *ngFor="let error of errorMessages.taskStatus">
+							<ng-container
+								*ngIf="
+									form['taskStatus'].hasError(error.type) &&
+									(form['taskStatus'].dirty || form['taskStatus'].touched)
+								"
+							>
+								<span class="text-danger">{{ error.message }}</span>
+							</ng-container>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+					<div class="form-group">
+						<label class="form-label text-primary">Enter Task Description*</label>
+						<textarea
+								type="text"
+								class="form-control"
+								id="description"
+								placeholder="Write task Description"
+								rows="4"
+								formControlName="description"
+								
+							></textarea>
+
+						<div class="text-left" *ngFor="let error of errorMessages.description">
+							<ng-container
+								*ngIf="
+									form['description'].hasError(error.type) &&
+									(form['description'].dirty || form['description'].touched)
+								"
+							>
+								<span class="text-danger">{{ error.message }}</span>
+							</ng-container>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer border-0">
+		<button type="button" class="btn btn-outline-primary" (click)="dismissModal()">Cancel</button>
+		<button type="button" class="btn btn-custom-primary ms-4" (click)="onSubmit()">Save</button>
+	</div>
+</div>

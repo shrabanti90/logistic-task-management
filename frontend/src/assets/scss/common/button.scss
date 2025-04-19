@@ -1,0 +1,159 @@
+@use '@angular/material' as mat;
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn-close:focus {
+	box-shadow: none;
+}
+
+.btn-custom-primary {
+	background: linear-gradient(90deg, #1d6cb5 0.1%, #2ab24b 100%), linear-gradient(0deg, #ffffff, #ffffff);
+	border: none;
+	box-shadow: none;
+	border-radius: 12px;
+	width: 170px;
+	color: $white;
+}
+.btn-custom-primary:hover {
+	color: $white;
+}
+
+.btn-primary {
+	background: $primary;
+	border: none;
+	box-shadow: none;
+	border-radius: 12px;
+	width: 170px;
+}
+
+.btn-primary-200 {
+	background: $primary-200;
+	border: none;
+	box-shadow: none;
+	border-radius: 12px;
+	width: 170px;
+}
+.btn-outline-primary,
+.btn-outline-primary:hover {
+	border-color: linear-gradient(90deg, #1d6cb5 0.1%, #2ab24b 100%), linear-gradient(0deg, #ffffff, #ffffff);
+	color: $primary !important;
+	background-color: transparent !important;
+	border-radius: 12px;
+	width: 170px;
+}
+
+.btn-danger,
+.btn-danger:hover {
+	border-color: $custom-warn !important;
+	background-color: $custom-warn !important;
+	border-radius: 12px;
+	width: 170px;
+}
+
+.btn-success,
+.btn-success:hover {
+	border-color: $green !important;
+	background-color: $green !important;
+	border-radius: 12px;
+	width: 170px;
+}
+
+.btn-outline-danger,
+.btn-outline-danger:hover {
+	border-color: $custom-warn !important;
+	color: $custom-warn !important;
+	background-color: transparent !important;
+	border-radius: 12px;
+	width: 170px;
+}
+
+.btn-outline-secondary,
+.btn-outline-secondary:hover {
+	border: 1px solid $custom-black-20;
+	border-radius: 12px;
+	width: 170px;
+}
+.btn-outline-send,
+.btn-outline-send:hover {
+	border: 1px solid $custom-black-20;
+	border-color: $custom-black-20;
+	border-radius: 12px;
+}
+.btn-outline-send:disabled {
+	border-color: $custom-black-20;
+}
+.btn-white-100 {
+	background-color: $white-100 !important;
+	color: #344054 !important;
+	border-radius: 12px;
+	border: 1px solid #d0d5dd;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	background-color: $custom-primary !important;
+}
+
+.btn-rounded {
+	border-radius: 50%;
+}
+.border-dashed {
+	border: dashed;
+}
+
+.btn-preview {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	background: linear-gradient(180deg, #112b64 0.01%, #4b6bb0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.btn-next {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	background: linear-gradient(90deg, #1d6cb5 0.1%, #2ab24b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.attached-box,
+.attached-box:hover {
+	border: 1px solid $primary !important;
+	color: $custom-primary !important;
+	background-color: transparent !important;
+	border-radius: 10px;
+	padding-left: 32px;
+}
+
+.btn-yellow,
+.btn-yellow:hover {
+	color: $white;
+	background-color: #b4bc34;
+	border-radius: 12px;
+	width: 170px;
+}
+.btn-blue,
+.btn-blue:hover {
+	color: $white;
+	background-color: #306eb3;
+	border-radius: 12px;
+	width: 170px;
+}
+.btn-green,
+.btn-blue:hover {
+	color: $white;
+	background-color: #19c052;
+	border-radius: 12px;
+	width: 170px;
+}

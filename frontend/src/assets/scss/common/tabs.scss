@@ -1,0 +1,67 @@
+.tabs-plans {
+	.nav-tabs .nav-link {
+		display: inline-block;
+		padding: 6px 35px;
+		color: $primary-200 !important;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 0px;
+	}
+	.nav-tabs .nav-link.active,
+	.nav-tabs .nav-item.show .nav-link {
+		color: $custom-primary !important;
+		background-color: $white !important;
+		font-weight: 500 !important;
+	}
+
+	.nav-tabs {
+		border-bottom: none;
+		margin-bottom: 30px;
+		border: 1px solid $primary-100 !important;
+		border-width: 1px !important;
+		width: fit-content;
+		border-radius: 6px;
+	}
+}
+.tabs-general {
+	.nav-tabs .nav-link {
+		display: inline-block;
+		padding: 6px 35px;
+		color: $primary-200 !important;
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 0px;
+		border: none;
+	}
+	.nav-tabs .nav-link.active,
+	.nav-tabs .nav-item.show .nav-link {
+		border-bottom: 2px solid #112b64 !important;
+		color: #112b64 !important;
+		background-color: #f4f7fc !important;
+		font-weight: 600 !important;
+	}
+
+	.nav-tabs {
+		margin-bottom: 30px;
+		width: fit-content;
+	}
+}
+
+.tabs-locations {
+	.nav-pills .nav-link.active,
+	.nav-pills .show > .nav-link {
+		background-color: $primary !important;
+		color: $white;
+		border-radius: 33px;
+	}
+
+	.nav-item {
+		background-color: $white !important;
+		font-size: 16px;
+		line-height: 24px;
+		border-radius: 33px;
+		.nav-link {
+			color: $custom-black-80;
+		}
+	}
+}

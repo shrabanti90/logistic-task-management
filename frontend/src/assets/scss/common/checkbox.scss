@@ -1,0 +1,27 @@
+.form-check-input {
+	width: 1.2em;
+	height: 1.2em;
+}
+.form-check {
+	.form-custom-check-input:checked {
+		background-image: url('./../../icons/check.svg') !important;
+		background-color: $primary-200 !important;
+		border-color: $primary-200 !important;
+	}
+	.form-check-input:checked[type='radio'] {
+		background-color: $white !important;
+		border-color: $primary-300 !important;
+	}
+	.form-check-input:checked[type='radio'] {
+		background-image: url('./../../icons/blue-dot.svg') !important;
+		background-size: 10px 9px;
+	}
+}
+.form-check-label {
+	color: $custom-black-80 !important;
+}
+
+.btn-check:checked + .btn-check-checked {
+	background-color: $primary;
+	color: $white;
+}

@@ -1,0 +1,21 @@
+.post-content {
+	overflow-y: scroll !important;
+	height: 64vh;
+}
+.post-message {
+	#emoji-icon {
+		border-right: none !important;
+	}
+	#attachment-icon {
+		border-left: none !important;
+	}
+	.input-group-text,
+	.form-control {
+		background-color: transparent !important;
+		border: 1px solid $primary-100 !important;
+	}
+	.form-control {
+		border-left: none !important;
+		border-right: none !important;
+	}
+}

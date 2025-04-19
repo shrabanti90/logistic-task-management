@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    title #{title}
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap' rel='stylesheet')
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet')
+    | &#x9;
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+    style.
+      .main-content {
+        max-width: inherit;
+        padding: 30px;
+        text-align:center;
+        background-color: #f4f7fc;
+      }
+  body(style='margin: 0;background-color: #f4f7fc;padding: 20px;font: 14px / 20px "Lexend", sans-serif;')
+   include ./header
+    #container.main-content
+      if email_logo 
+        img(src=email_logo,style='margin-left:auto;margin-right:auto;padding-bottom:10px')
+      p(style='font-size:25px;font-weight:550;color:#4d4d4d') #{line1}
+      | &#x9;&#x9;
+      p(style='font-size:20px;font-weight:100;color:#4d4d4d;margin-bottom:0') #{line2}
+      p(style='font-size:14px;font-weight:300;color:#4d4d4d;margin-bottom:0') #{line3}
+      p(style='font-size:14px;font-weight:300;color:#4d4d4d;margin-top:0;text-decoration:underline') #{line4}
+
+      p(style='font-size:14px;font-weight:300;color:#4d4d4d;margin-bottom:0px;margin-top:30px') #{line5}
+      p(style='font-size:14px;font-weight:300;color:#4d4d4d;margin-top:0px') #{line6}
+    include ./footer

@@ -1,0 +1,35 @@
+<div class="container-fluid h-100">
+	<div class="row" style="height: 100%">
+		<div class="col-lg-7 col-md-8 col-sm-12">
+			<div class="row" style="height: 90%">
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<h3 class="text-custom-black fs-3 fw-normal">Login</h3>
+					</div>
+					<div class="col-lg-5 col-md-6 col-sm-12">
+						<form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+							<div class="form-group">
+								<label for="exampleFormControlInput1" class="form-label text-custom-black"
+									>Mobile Number</label
+								>
+								<app-mobile-number
+									[customClass]="true"
+									[formControlMobileNumber]="dataForm.get('mobileNumber')"
+									[formControlCountryCode]="dataForm.get('countryCode')"
+									[errorValidator]="errorMessages"
+									(validNumberEvent)="receiveValidNumberEvent($event)"
+								>
+								</app-mobile-number>
+							</div>
+							<div class="clearfix my-3">
+								<button type="submit" class="btn btn-custom-primary border-radius w-100 text-uppercase">
+									Send OTP
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,48 @@
+@use '@angular/material' as mat;
+
+.badge-rejected,
+.badge-expired,
+.badge-did_not_verify,
+.badge-terminated_sites_closed,
+.badge-rejected:hover,
+.badge-expired:hover,
+.badge-did_not_verify:hover,
+.badge-terminated_sites_closed:hover {
+	border: 1px solid $custom-warn !important;
+	color: $custom-warn;
+	width: 140px !important;
+}
+
+.badge-300 {
+	background-color: $primary-300;
+	color: $white;
+	width: 140px !important;
+}
+
+.badge-table-status {
+	font-size: 14px;
+	line-height: 20px;
+	border-radius: 16px;
+	padding: 2px 10px 2px 8px;
+	font-weight: 400 !important;
+}
+
+.badge-danger {
+	background-color: #fef3f2;
+	color: #b42318;
+}
+
+.badge-success {
+	background-color: #40aa781a;
+	color: #12b76a;
+}
+
+.badge-warning {
+	background-color: #fffaeb;
+	color: #b54708;
+}
+
+.badge-primary {
+	background-color: $primary-200;
+	color: $primary;
+}

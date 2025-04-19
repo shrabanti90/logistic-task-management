@@ -1,0 +1,31 @@
+.border-dotted {
+	border-style: dotted;
+}
+.border-width-thin {
+	border-width: thin;
+}
+.border-primary-200 {
+	border: 1px solid $primary-200;
+}
+.border-radius {
+	border-radius: 20px;
+}
+.border-bottom,
+.border-bottom-primary-200 {
+	border-bottom: 1px solid $primary-200 !important;
+}
+
+.border-bottom,
+.border-bottom-primary-100 {
+	border-bottom: 1px solid $primary-100 !important;
+}
+
+.border-yellow {
+	border-color: #dee839 !important;
+}
+.border-blue {
+	border-color: #306eb3 !important;
+}
+.border-green {
+	border-color: #19c052 !important;
+}

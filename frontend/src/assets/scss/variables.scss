@@ -1,0 +1,64 @@
+$black: #000000;
+$custom-black: #241f20;
+$custom-black-80: #241f20cc;
+$custom-black-50: #241f2080;
+$custom-black-20: #241f2033;
+
+$white: #ffffff;
+$white-100: #f5f5f5;
+
+$grey: #b1b1b1;
+
+$custom-primary: linear-gradient(180deg, #3a64c8 50%, #3e75c5 100%);
+$custom-accent: #3d6ec7;
+$custom-warn: #f04438;
+$custom-primary-dark: #525f7f;
+
+$primary: #3d6ec7;
+$primary-100: #f6fbff;
+$primary-200: #e8f0f9;
+$primary-300: #3d6ec7;
+$primary-dark: #00234b;
+$primary-bluish: #00bde1;
+$green: #26ab64;
+
+$custom-brand-primary: (
+	50: #ecf1f9,
+	100: #d8e2f4,
+	200: #d8e2f4,
+	300: #c5d4ee,
+	400: #b1c5e9,
+	500: #9eb7e3,
+	600: #8ba8dd,
+	700: #779ad8,
+	800: #648bd2,
+	900: #3d6ec7,
+	contrast: (),
+);
+$custom-brand-accent: (
+	50: #feeceb,
+	100: #fcdad7,
+	200: #fbc7c3,
+	300: #f9b4af,
+	400: #f8a29c,
+	500: #f68f88,
+	600: #f57c74,
+	700: #f36960,
+	800: #f2574c,
+	900: #f2574c,
+	contrast: (),
+);
+
+$custom-brand-warn: (
+	50: #fbe4e5,
+	100: #f5bcbe,
+	200: #ee9092,
+	300: #e76366,
+	400: #e24146,
+	500: #dd2025,
+	600: #d91c21,
+	700: #d4181b,
+	800: #cf1316,
+	900: #c70b0d,
+	contrast: (),
+);
